@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Organic Fresh Tomatoes",
+    "category": "vegetables",
+    "description": "Freshly picked organic tomatoes from our local farm. No pesticides, 100% natural.",
+    "regularPrice": 8.99,
+    "offerPrice": 5.99,
+    "image": "/images/products/tomatoes.svg",
+    "rating": 4.8,
+    "reviews": 245,
+    "details": "Premium quality organic tomatoes grown without any synthetic pesticides or fertilizers. Harvested at peak ripeness for maximum flavor and nutrition. Perfect for salads, cooking, and sauces."
+  },
+  {
+    "id": 2,
+    "name": "Homemade Organic Peanut Butter",
+    "category": "spreads",
+    "description": "Rich, creamy peanut butter made from organic roasted peanuts. No sugar added!",
+    "regularPrice": 12.99,
+    "offerPrice": 8.99,
+    "image": "/images/products/peanut-butter.svg",
+    "rating": 4.9,
+    "reviews": 312,
+    "details": "Handcrafted peanut butter made from 100% organic peanuts. Contains no added sugar, salt, or preservatives. Rich source of protein and healthy fats."
+  },
+  {
+    "id": 3,
+    "name": "Farm Fresh Free-Range Eggs",
+    "category": "dairy",
+    "description": "Golden, nutritious eggs from free-range organic hens. Rich in omega-3s!",
+    "regularPrice": 7.99,
+    "offerPrice": 4.99,
+    "image": "/images/products/eggs.svg",
+    "rating": 4.7,
+    "reviews": 189,
+    "details": "Farm fresh eggs from free-range hens fed on organic grain. High in choline and lutein for eye health. Each dozen contains vibrant golden yolks indicating superior nutrition."
+  },
+  {
+    "id": 4,
+    "name": "Organic Honey - Raw & Unfiltered",
+    "category": "condiments",
+    "description": "Pure raw honey straight from our bee hives. No heating or processing.",
+    "regularPrice": 14.99,
+    "offerPrice": 9.99,
+    "image": "/images/products/honey.svg",
+    "rating": 4.9,
+    "reviews": 428,
+    "details": "Golden raw honey harvested directly from our sustainable bee hives. Packed with enzymes, minerals, and antioxidants. Perfect for sweetening and medicinal uses."
+  },
+  {
+    "id": 5,
+    "name": "Homemade Organic Granola",
+    "category": "breakfast",
+    "description": "Crunchy granola with organic oats, nuts, and dried fruits. Zero artificial ingredients.",
+    "regularPrice": 11.99,
+    "offerPrice": 7.99,
+    "image": "/images/products/granola.svg",
+    "rating": 4.6,
+    "reviews": 267,
+    "details": "Handmade granola with certified organic oats, almonds, walnuts, and raisins. Sweetened naturally with honey. Great source of fiber and energy."
+  },
+  {
+    "id": 6,
+    "name": "Organic Spinach & Kale Mix",
+    "category": "vegetables",
+    "description": "Fresh organic leafy greens loaded with vitamins and minerals.",
+    "regularPrice": 6.99,
+    "offerPrice": 3.99,
+    "image": "/images/products/spinach.svg",
+    "rating": 4.5,
+    "reviews": 156,
+    "details": "Certified organic baby spinach and kale blend. Packed with iron, calcium, and antioxidants. Perfect for salads, smoothies, and cooking."
+  },
+  {
+    "id": 7,
+    "name": "Homemade Pasta - Whole Wheat",
+    "category": "grains",
+    "description": "Freshly made whole wheat pasta. High in fiber and protein.",
+    "regularPrice": 9.99,
+    "offerPrice": 5.99,
+    "image": "/images/products/pasta.svg",
+    "rating": 4.7,
+    "reviews": 203,
+    "details": "Artisanal whole wheat pasta made with organic grains. Rich in fiber, promotes digestive health. Cooks perfectly in just 8-10 minutes."
+  },
+  {
+    "id": 8,
+    "name": "Organic Almond Milk - Unsweetened",
+    "category": "dairy",
+    "description": "Creamy almond milk with no added sugars. Perfect dairy alternative.",
+    "regularPrice": 5.99,
+    "offerPrice": 3.49,
+    "image": "/images/products/almond-milk.svg",
+    "rating": 4.4,
+    "reviews": 187,
+    "details": "Made from organic almonds, water, and a touch of sea salt. No gums, no carrageenan. Rich, creamy texture. Ideal for coffee, cereal, and smoothies."
+  }
+]
