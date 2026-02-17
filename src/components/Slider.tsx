@@ -78,15 +78,15 @@ export default function Slider() {
         className={`relative w-full h-[500px] md:h-[600px] bg-cover bg-center transition-all duration-500`}
         style={{ backgroundImage: `url(${slide.image})` }}
       >
-        {/* Brand gradient overlay and dark layer for contrast */}
-        <div className={`absolute inset-0 bg-gradient-to-r ${slide.bgColor} opacity-70`} />
-        <div className="absolute inset-0 bg-black/25" />
+        {/* Brand gradient overlay and lighter dark layer so image shows clearer */}
+        <div className={`absolute inset-0 bg-gradient-to-r ${slide.bgColor} opacity-40`} />
+        <div className="absolute inset-0 bg-black/10" />
 
         <div className="absolute inset-0 flex items-center justify-center px-4 md:px-12">
-          <div className="z-20 max-w-3xl mx-auto animate-fadeInUp text-center px-4">
-            <h1 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight drop-shadow-lg truncate">{slide.title}</h1>
-            <p className="text-lg md:text-xl text-white/90 mb-8 leading-relaxed drop-shadow truncate">{slide.description}</p>
-            <button className="px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-bold rounded-lg hover:shadow-xl transform hover:scale-105 transition-all text-lg mx-auto">{slide.buttonText}</button>
+          <div className="z-20 max-w-3xl mx-auto animate-fadeInUp text-center px-4 backdrop-blur-sm bg-black/20 rounded-md px-6 py-3">
+            <h1 className="text-3xl md:text-4xl font-black text-white mb-4 leading-tight drop-shadow-lg truncate">{slide.title}</h1>
+            <p className="text-base md:text-lg text-white/95 mb-6 leading-relaxed drop-shadow truncate">{slide.description}</p>
+            <button className="px-6 py-3 bg-gradient-to-r from-primary to-secondary text-white font-bold rounded-lg hover:shadow-xl transform hover:scale-105 transition-all text-base mx-auto">{slide.buttonText}</button>
           </div>
         </div>
 
