@@ -82,20 +82,11 @@ export default function Slider() {
         <div className={`absolute inset-0 bg-gradient-to-r ${slide.bgColor} opacity-70`} />
         <div className="absolute inset-0 bg-black/25" />
 
-        <div className="absolute inset-0 flex items-center justify-between px-4 md:px-12">
-          <div className="flex-1 z-20 max-w-md md:max-w-lg animate-fadeInUp">
-            <h1 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight drop-shadow-lg">{slide.title}</h1>
-            <p className="text-lg md:text-xl text-white/90 mb-8 leading-relaxed drop-shadow">{slide.description}</p>
-            <button className="px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-bold rounded-lg hover:shadow-xl transform hover:scale-105 transition-all text-lg">{slide.buttonText}</button>
-          </div>
-
-          <div className="flex-1 hidden md:flex items-center justify-center">
-            <div className="relative w-96 h-96">
-              <svg className="w-full h-full text-white/10" fill="currentColor" viewBox="0 0 200 200">
-                <circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" strokeWidth="2" opacity="0.12" />
-                <circle cx="100" cy="100" r="60" fill="none" stroke="currentColor" strokeWidth="2" opacity="0.18" />
-              </svg>
-            </div>
+        <div className="absolute inset-0 flex items-center justify-center px-4 md:px-12">
+          <div className="z-20 max-w-3xl mx-auto animate-fadeInUp text-center px-4">
+            <h1 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight drop-shadow-lg truncate">{slide.title}</h1>
+            <p className="text-lg md:text-xl text-white/90 mb-8 leading-relaxed drop-shadow truncate">{slide.description}</p>
+            <button className="px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-bold rounded-lg hover:shadow-xl transform hover:scale-105 transition-all text-lg mx-auto">{slide.buttonText}</button>
           </div>
         </div>
 
