@@ -74,24 +74,27 @@ export default function Slider() {
 
   return (
     <div className="relative w-full overflow-hidden">
-      <div className={`relative w-full h-[500px] md:h-[600px] bg-gradient-to-r ${slide.bgColor} transition-all duration-500`}>
+      <div
+        className={`relative w-full h-[500px] md:h-[600px] bg-cover bg-center transition-all duration-500`}
+        style={{ backgroundImage: `url(${slide.image})` }}
+      >
+        {/* Brand gradient overlay and dark layer for contrast */}
+        <div className={`absolute inset-0 bg-gradient-to-r ${slide.bgColor} opacity-70`} />
+        <div className="absolute inset-0 bg-black/25" />
+
         <div className="absolute inset-0 flex items-center justify-between px-4 md:px-12">
-          <div className="flex-1 z-10 max-w-md md:max-w-lg animate-fadeInUp">
-            <h1 className="text-4xl md:text-6xl font-black text-gray-900 mb-6 leading-tight">{slide.title}</h1>
-            <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">{slide.description}</p>
+          <div className="flex-1 z-20 max-w-md md:max-w-lg animate-fadeInUp">
+            <h1 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight drop-shadow-lg">{slide.title}</h1>
+            <p className="text-lg md:text-xl text-white/90 mb-8 leading-relaxed drop-shadow">{slide.description}</p>
             <button className="px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-bold rounded-lg hover:shadow-xl transform hover:scale-105 transition-all text-lg">{slide.buttonText}</button>
           </div>
 
           <div className="flex-1 hidden md:flex items-center justify-center">
-            <div className="relative w-96 h-96 flex items-center justify-center">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <svg className="w-full h-full text-green-500" fill="currentColor" viewBox="0 0 200 200">
-                  <circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" strokeWidth="2" opacity="0.12" />
-                  <circle cx="100" cy="100" r="60" fill="none" stroke="currentColor" strokeWidth="2" opacity="0.18" />
-                </svg>
-              </div>
-
-              <img src={slide.image} alt={slide.title} className="relative w-72 h-72 object-contain rounded-lg shadow-2xl transform transition-transform duration-700 hover:scale-105" />
+            <div className="relative w-96 h-96">
+              <svg className="w-full h-full text-white/10" fill="currentColor" viewBox="0 0 200 200">
+                <circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" strokeWidth="2" opacity="0.12" />
+                <circle cx="100" cy="100" r="60" fill="none" stroke="currentColor" strokeWidth="2" opacity="0.18" />
+              </svg>
             </div>
           </div>
         </div>
