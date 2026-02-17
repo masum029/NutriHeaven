@@ -83,7 +83,7 @@ export default function Slider() {
         <div className="absolute inset-0 bg-black/10" />
 
         <div className="absolute inset-0 flex items-center justify-center px-4 md:px-12">
-          <div className="z-20 max-w-3xl mx-auto animate-fadeInUp text-center px-4 backdrop-blur-sm bg-black/20 rounded-md px-6 py-3">
+          <div className="z-20 max-w-3xl mx-auto animate-fadeInUp text-center px-6 py-3">
             <h1 className="text-3xl md:text-4xl font-black text-white mb-4 leading-tight drop-shadow-lg truncate">{slide.title}</h1>
             <p className="text-base md:text-lg text-white/95 mb-6 leading-relaxed drop-shadow truncate">{slide.description}</p>
             <button className="px-6 py-3 bg-gradient-to-r from-primary to-secondary text-white font-bold rounded-lg hover:shadow-xl transform hover:scale-105 transition-all text-base mx-auto">{slide.buttonText}</button>
