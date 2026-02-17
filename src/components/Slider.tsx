@@ -25,7 +25,7 @@ const sliderData: SlideProps[] = [
     title: '🍯 Pure Nutrition Better Living',
     description: 'Premium organic products from nature with enzymes and goodness.',
     buttonText: 'Shop Premium',
-    image: '/images/slider/honey.svg',
+    image: '/images/products/honeyNuts.jpg',
     bgColor: 'from-yellow-50 to-yellow-100',
   },
   {
@@ -83,11 +83,15 @@ export default function Slider() {
           </div>
 
           <div className="flex-1 hidden md:flex items-center justify-center">
-            <div className="relative w-96 h-96">
-              <svg className="w-full h-full text-green-500" fill="currentColor" viewBox="0 0 200 200">
-                <circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" strokeWidth="2" opacity="0.2" />
-                <circle cx="100" cy="100" r="60" fill="none" stroke="currentColor" strokeWidth="2" opacity="0.3" />
-              </svg>
+            <div className="relative w-96 h-96 flex items-center justify-center">
+              <div className="absolute inset-0 flex items-center justify-center">
+                <svg className="w-full h-full text-green-500" fill="currentColor" viewBox="0 0 200 200">
+                  <circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" strokeWidth="2" opacity="0.12" />
+                  <circle cx="100" cy="100" r="60" fill="none" stroke="currentColor" strokeWidth="2" opacity="0.18" />
+                </svg>
+              </div>
+
+              <img src={slide.image} alt={slide.title} className="relative w-72 h-72 object-contain rounded-lg shadow-2xl transform transition-transform duration-700 hover:scale-105" />
             </div>
           </div>
         </div>
