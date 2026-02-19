@@ -1,12 +1,12 @@
-'use client';
 
 import Image from "next/image";
 import Link from "next/link";
 import products from "@/data/products.json";
 import { notFound } from "next/navigation";
 
-export default function ProductDetail({ params }: { params: { id: string } }) {
-  const id = params.id;
+export default async function ProductDetail({ params }: { params: { id: string } | Promise<{ id: string }> }) {
+  const resolvedParams = await params;
+  const id = resolvedParams.id;
   const product = products.find((p) => p.id === parseInt(id));
 
   if (!product) {
